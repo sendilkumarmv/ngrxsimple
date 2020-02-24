@@ -1,0 +1,7 @@
+<div>
+<span>Select company:</span>
+  <select #company (change)='onCompanySelected(company.value)'>
+    <option>--Select--</option>
+    <option *ngFor="let ticker of tickers" value={{ticker.adrTickerName}}>{{ticker.adrListName}}</option>
+  </select>
+</div>
